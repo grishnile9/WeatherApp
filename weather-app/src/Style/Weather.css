@@ -1,0 +1,51 @@
+/* .weather-container{
+    /* background-color: rgba(0, 0, 0, 0.73);
+    background-position: center; */
+
+.city-search{
+    /* display: flex;
+    align-items: center; */
+    justify-content: center;
+      background-image: url("../images/background.jpg");
+      /* height: 93vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; */
+      display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 100vh;
+    width: 100%;
+    
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+.city-bg{
+    width: 60%;
+    height: 75%;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-image: url("../images/city.jpg");
+    min-height: 500px;
+    position: relative;
+    background-position-x: -30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+.search-container{
+    padding: 5px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.search-button{
+    
+}

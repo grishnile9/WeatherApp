@@ -1,0 +1,37 @@
+server:
+  port: 8088
+ 
+spring:
+  application:
+    name: ApIGateway-Service
+  cloud:
+    gateway:
+      routes:
+        - id: UserProfile-new-one
+          uri: http://ec2-13-60-8-19.eu-north-1.compute.amazonaws.com:8089
+          predicates:
+            - Path=/WeatherApp/**
+            
+        - id: Authentication
+          uri: http://ec2-13-60-8-19.eu-north-1.compute.amazonaws.com:7002
+          predicates:
+           - Path=/login/**
+           
+#        - id: WeatherApp
+#          uri: http://localhost:8084
+#          predicates:
+#           - Path=/api/**
+#           
+#        - id: WishList-Service
+#          uri: http://localhost:7004
+#          predicates:
+#           - Path=/wishlistcity/**
+            
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Controller-Allow-Credentials
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"

@@ -1,0 +1,32 @@
+/* .wishlist-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      background-image: url("C:\weather-app\src\images\background.jpg");
+      height: 93vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+} */
+.heading-container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.heading-container h2 {
+    margin: 0; /* Remove default margin for h2 */
+  }
+  .wishlist-container{
+    background-image: url('../images/register-bg.jpg');
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+ 
